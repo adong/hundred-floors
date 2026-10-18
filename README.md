@@ -2,17 +2,21 @@
 
 [![100 Floors title screen](docs/screenshot.jpg)](https://adong.github.io/hundred-floors/)
 
+Drop down 100 floors, or climb up 100: how far can you go?
+
+**中文：** 是男人就下一百层，还有上一百层：你能走多远？
+
 Press **?** any time (or tap the round **?** button on the left edge) to see the keys. The game waits while you look.
 Tap the language button under it (the A文 icon) to switch between English and 中文; the dashboard and every game remember the choice.
 
 Two classic Chinese flash games in one, starring Teddy and Tommy, built with Claude Code from plain JavaScript and Three.js:
 
 - **⬇ DOWN, 下一百层**: the screen keeps scrolling up. Run along the platforms and drop off their edges to go deeper, without touching the spiky ceiling and without falling off the bottom.
-- **⬆ UP, 上一百层**: Icy Tower and Doodle Jump style. The kid bounces off every platform; steer to land on the next one up, and get there before the rising bottom of the screen catches you.
+- **⬆ UP, 上一百层**: the classic bounce-and-climb style. The kid bounces off every platform; steer to land on the next one up, and get there before the rising bottom of the screen catches you.
 
 It's a side view in 3D. The kids are the shared kit's blocky characters, every texture is painted on a canvas, and every sound is synthesised. There are no image, model or audio files.
 
-The name lives in one place, [js/title.js](js/title.js), so it's easy to rename. "100 Floors" is a working title.
+The name lives in one place, [js/title.js](js/title.js), so it's easy to rename.
 
 ## Play
 

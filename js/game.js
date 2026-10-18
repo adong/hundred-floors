@@ -925,7 +925,7 @@
     try {
       await Promise.race([document.fonts.load('64px Bungee'), new Promise((r) => setTimeout(r, 1500))]);
     } catch (e) { /* fall back to system fonts */ }
-    document.title = TITLE.NAME;
+    document.title = `${TITLE.NAME} · Teddy & Tommy`;
     const [l1, ...rest] = TITLE.NAME.split(' ');
     $('logo').innerHTML = `<span class="l1">${l1}</span><span class="l2">${rest.join(' ')}</span>`;
     $('logo').setAttribute('aria-label', TITLE.NAME);
