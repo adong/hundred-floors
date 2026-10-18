@@ -3,6 +3,7 @@
 [![100 Floors title screen](docs/screenshot.jpg)](https://adong.github.io/hundred-floors/)
 
 Press **?** any time (or tap the round **?** button on the left edge) to see the keys. The game waits while you look.
+Tap **中文 / EN** under it to switch between English and 中文 (the dashboard and every game remember the choice).
 
 Two classic Chinese flash games in one, starring Teddy and Tommy, built with Claude Code from plain JavaScript and Three.js:
 
@@ -134,6 +135,8 @@ js/world.js      canvas textures, the cave and the tower, platforms, the spiky c
                  particles, POW bursts and the pop-up hoop
 js/hero.js       a kid on screen: side-on poses, the flip, the balloon, the celebration loop with 💥, ✌️ and the 🏀
 js/game.js       states, camera, input, the buddy, HUD, bests, window.floors
+js/keys.js       the keys the ? panel shows
+js/zh.js         中文: the dictionary and rules for every word on the page, the ? panel and the word bursts
 tools/check.js   the headless fairness check and soak (node)
 kit/             copy of ~/claude-games/kit (python3 ../kit/tools/sync.py .); don't edit it here
 dist/hundred-floors.html   the single-page build

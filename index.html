@@ -224,6 +224,24 @@
     .tag, .howto { display: none; }
     .mode { padding: 6px 10px 8px; }
   }
+  /* phones held sideways: everything on the title fits without scrolling */
+  @media (max-height: 420px) and (orientation: landscape) {
+    #title { gap: 6px; }
+    .logo .l1 { font-size: 40px; -webkit-text-stroke-width: 3px; }
+    .logo .l2 { font-size: 22px; -webkit-text-stroke-width: 3px; }
+    .mode { padding: 4px 10px 6px; box-shadow: 0 5px 0 var(--ink); }
+    .mode .arrow { font-size: 22px; }
+    .mode .nm { font-size: 20px; }
+    .mode .cn { font-size: 13px; }
+    .mode .bs { font-size: 11px; }
+    .pick-label, .touch-hint, .credit { display: none !important; } /* the ? panel has the same help */
+    .picker { padding: 6px 8px 8px; flex-shrink: 0; }
+    .toggle { padding: 5px 12px; font-size: 18px; }
+    .avatar { width: 66px; padding: 4px 4px 6px; }
+    .avatar img { width: 50px; height: 50px; border-radius: 10px; }
+    .avatar .nm { font-size: 12px; }
+    .avatar .bs { font-size: 10px; white-space: nowrap; }
+  }
 
   /* ---------- pause / game over ---------- */
   .bonk {
@@ -363,6 +381,7 @@
 <script src="kit/roster.js"></script>
 <script src="kit/portraits.js"></script>
 <script src="kit/sound.js"></script>
+<script src="kit/lang.js"></script>
 <script src="kit/help.js"></script>
 <script src="js/title.js"></script>
 <script src="js/sim.js"></script>
@@ -371,5 +390,6 @@
 <script src="js/hero.js"></script>
 <script src="js/game.js"></script>
 <script src="js/keys.js"></script>
+<script src="js/zh.js"></script>
 </body>
 </html>

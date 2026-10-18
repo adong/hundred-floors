@@ -327,8 +327,10 @@
     'BIG!': ['#18d4ff', '#ffffff', '#ff3d7f'], 'YUM!': ['#ff9fd0', '#fff2a8', '#b02a8a'], 'POP!': ['#ffffff', '#fff2a8', '#ff3d7f'],
   };
   const burstCache = {};
+  // the word is drawn in the current language (Kit.lang: OUCH! -> 哎哟！); each language keeps its own textures
   function burstTexture(word) {
-    if (burstCache[word]) return burstCache[word];
+    const label = Kit.lang ? Kit.lang.t(word) : word;
+    if (burstCache[label]) return burstCache[label];
     const [c, g] = makeCanvas(256, 256);
     const [outer, inner, text] = BURST[word] || BURST['POW!'];
     const star = (r1, r2, n, fill) => {
@@ -347,16 +349,16 @@
     star(84, 52, 10, inner);
     g.translate(128, 132);
     g.rotate(-0.12);
-    g.font = `${word.length > 5 ? 46 : 56}px ${gfx.FONT}`;
+    g.font = `${label.length > 5 ? 46 : 56}px ${gfx.FONT}`;
     g.textAlign = 'center';
     g.textBaseline = 'middle';
     g.lineWidth = 10;
     g.lineJoin = 'round';
     g.strokeStyle = '#14121f';
-    g.strokeText(word, 0, 0);
+    g.strokeText(label, 0, 0);
     g.fillStyle = text;
-    g.fillText(word, 0, 0);
-    return (burstCache[word] = toTexture(c));
+    g.fillText(label, 0, 0);
+    return (burstCache[label] = toTexture(c));
   }
 
   function buildTextures() {
