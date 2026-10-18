@@ -166,7 +166,7 @@
   .mode.up { background: linear-gradient(180deg, #b8f0ff, #18b4ff); }
   .mode .arrow { font-family: var(--display); font-size: clamp(30px, 6vw, 44px); line-height: 1; }
   .mode .nm { font-family: var(--display); font-size: clamp(22px, 4.6vw, 32px); line-height: 1.05; }
-  .mode .cn { font-size: clamp(15px, 3vw, 20px); font-weight: 800; }
+  .mode .sub { font-size: clamp(14px, 2.8vw, 18px); font-weight: 800; }
   .mode .bs { font-size: 13px; font-weight: 800; opacity: 0.8; }
   .mode[aria-pressed="true"] { outline: 4px solid #fff; outline-offset: 3px; }
   .mode:active { transform: translateY(6px); box-shadow: 0 2px 0 var(--ink); }
@@ -232,7 +232,7 @@
     .mode { padding: 4px 10px 6px; box-shadow: 0 5px 0 var(--ink); }
     .mode .arrow { font-size: 22px; }
     .mode .nm { font-size: 20px; }
-    .mode .cn { font-size: 13px; }
+    .mode .sub { font-size: 13px; }
     .mode .bs { font-size: 11px; }
     .pick-label, .touch-hint, .credit { display: none !important; } /* the ? panel has the same help */
     .picker { padding: 6px 8px 8px; flex-shrink: 0; }
@@ -327,8 +327,8 @@
   <div class="logo" id="logo"><span class="l1">100</span><span class="l2">Floors</span></div>
   <p class="tag">Go down 100 floors, or climb up 100, with Teddy &amp; Tommy!</p>
   <div class="modes">
-    <button class="mode down" id="modeDown" data-mode="down"><span class="arrow">⬇</span><span class="nm">DOWN</span><span class="cn" id="cnDown">下一百层</span><span class="bs" id="bestDown">BEST 0</span></button>
-    <button class="mode up" id="modeUp" data-mode="up"><span class="arrow">⬆</span><span class="nm">UP</span><span class="cn" id="cnUp">上一百层</span><span class="bs" id="bestUp">BEST 0</span></button>
+    <button class="mode down" id="modeDown" data-mode="down"><span class="arrow">⬇</span><span class="nm">DOWN</span><span class="sub">drop to floor 100</span><span class="bs" id="bestDown">BEST 0</span></button>
+    <button class="mode up" id="modeUp" data-mode="up"><span class="arrow">⬆</span><span class="nm">UP</span><span class="sub">climb to floor 100</span><span class="bs" id="bestUp">BEST 0</span></button>
   </div>
   <div class="pick-label">PICK YOUR KID</div>
   <div id="picker" class="picker" role="radiogroup" aria-label="Pick your kid"></div>

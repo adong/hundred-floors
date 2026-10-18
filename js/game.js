@@ -929,8 +929,6 @@
     const [l1, ...rest] = TITLE.NAME.split(' ');
     $('logo').innerHTML = `<span class="l1">${l1}</span><span class="l2">${rest.join(' ')}</span>`;
     $('logo').setAttribute('aria-label', TITLE.NAME);
-    $('cnDown').textContent = TITLE.DOWN;
-    $('cnUp').textContent = TITLE.UP;
     if (matchMedia('(hover: none) and (pointer: coarse)').matches) document.body.classList.add('touch');
     if (window.DeviceOrientationEvent) {
       $('tiltBtn').classList.add('can');

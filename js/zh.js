@@ -8,14 +8,14 @@
   L.add({
     // title screen
     'Go down 100 floors, or climb up 100, with Teddy & Tommy!': '和 Teddy、Tommy 一起，往下一百层，或者往上爬一百层！',
-    'DOWN': '往下', 'UP': '往上', 'BEST 0': '最高 0', // (the placeholder before the game fills in the bests)
+    'DOWN': HF_TITLE.DOWN, 'UP': HF_TITLE.UP, 'drop to floor 100': '一路往下跳', 'climb to floor 100': '一路往上蹦', 'BEST 0': '最高 0', // (the placeholder before the game fills in the bests)
     'PICK YOUR KID': '选一个小朋友', 'Pick your kid': '选一个小朋友', 'ZOMBIE': '僵尸',
     'BUDDY · TAP ME!': '点我叫他！', 'EASY OFF': '简单 关', 'EASY ON': '简单 开', 'TILT OFF': '倾斜 关', 'TILT ON': '倾斜 开',
     'Easy mode (E): slower, wider platforms, 5 hearts': '简单模式 (E)：更慢、平台更宽、5 颗心',
     'Steer by tilting': '倾斜手机来控制方向',
-    'big jump (UP)': '大跳（往上模式）', 'pick a mode,': '选模式，', 'go': '出发', 'call': '叫', 'easy': '简单', 'sound': '声音',
+    'big jump (UP)': '大跳（上一百层）', 'pick a mode,': '选模式，', 'go': '出发', 'call': '叫', 'easy': '简单', 'sound': '声音',
     'Hold the left or right side of the screen to move. In UP, tap ⤒ JUMP for a big jump. Tap':
-      '按住屏幕左边或右边来移动。往上模式点 ⤒ 大跳 跳得更高。点',
+      '按住屏幕左边或右边来移动。上一百层里点 ⤒ 大跳 跳得更高。点',
     "'s face to call him!": ' 的头像，叫他来帮忙！',
     // HUD and buttons (their tooltips too)
     'hearts': '心', 'Treats': '零食', 'Combo stars': '连跳星星', 'Your buddy is guarding you': '兄弟在保护你',
@@ -33,7 +33,7 @@
     // the ? panel (js/keys.js)
     'pick a mode and go (title)': '选模式出发（标题页）',
     'Hold the left or right half of the screen to move, ⤒ JUMP in UP mode, or 📱 TILT. The big face (bottom right) calls your brother.':
-      '按住屏幕左半边或右半边来移动，往上模式点 ⤒ 大跳，也可以用 📱 倾斜。点右下角的大头像叫兄弟来帮忙。',
+      '按住屏幕左半边或右半边来移动，上一百层里点 ⤒ 大跳，也可以用 📱 倾斜。点右下角的大头像叫兄弟来帮忙。',
     // the 3D word bursts (world.js, hero.js)
     'OUCH!': '哎哟！', 'BONK!': '咚！', 'BOING!': '蹦！', 'SAFE!': '没事！', 'SWISH!': '唰！',
   });
