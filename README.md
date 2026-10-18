@@ -1,5 +1,7 @@
 # 100 Floors
 
+[![100 Floors title screen](docs/screenshot.jpg)](https://adong.github.io/hundred-floors/)
+
 Two classic Chinese flash games in one, starring Teddy and Tommy, built with Claude Code from plain JavaScript and Three.js:
 
 - **⬇ DOWN, 下一百层**: the screen keeps scrolling up. Run along the platforms and drop off their edges to go deeper, without touching the spiky ceiling and without falling off the bottom.
